@@ -7,7 +7,7 @@ categories: Python Helloword
 Hello world! 
 ```python
 print('Hello world!')
-print('Welcome to JVN-stuco Blog)
+print('Welcome to JVN-stuco Blog')
 ```
 
 This blog we talk about Quantitative Finance and Data Science

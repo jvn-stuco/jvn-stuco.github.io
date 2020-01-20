@@ -37,7 +37,7 @@ Rejecting the null hypothesis is kind of like the "innocent until proven guilty"
 
 ## 3. P-hacking
 When experimenting, scientists usually use a control group and an experimental group. The experimental group faces a condition in which scientists want to know the effect of that condition on the experimental group. The control group is for comparison. For example, in the chocolate experiment above, we want to test that if eating chocolate does affect your weight. So, we choose the experimental group is the group that is allowed to eat one bar of chocolate a day, the remaining group is the control group. Then scientists start to set some null hypotheses to test the effect of a chocolate bar. In hypothesis testing, there are 4 possible outcomes when experimenting with a null hypothesis:
-<img align="left" width="100" height="100" src="hypothesis.png">
+<img align="left" width="300" height="300" src="hypothesis.png">
 1. The null hypothesis is true. We correctly fail to reject it.
 2. The null hypothesis is true. We incorrectly reject it.
 3. The null hypothesis is false. We correctly reject it.

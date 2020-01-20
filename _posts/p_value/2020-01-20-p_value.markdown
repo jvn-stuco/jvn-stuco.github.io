@@ -9,9 +9,9 @@ categories: Statistics
 Author: Man Bui - QCF 2018
 
 ## 1. Introduction
-Before starting the article, make sure you have some basic knowledge about hypothesis testing, p-value, and other basic statistical stuff. We will discuss **The misunderstanding of p-value and misinterpret in scientific papers**.
+Before starting the article, make sure you have some basic knowledge about hypothesis testing, p-value, and other basic statistical stuff. We will discuss "**The misunderstanding of p-value and misinterpret in scientific papers**" in this article.
 
-P-value is one of the most basic concepts that every statistical student in their curriculum. P-value appears in some scientific papers in many fields like Physics, Statistics, Economics, Finance, Psychology, etc. Another word we will encounter when reading about p-value is **statistically significant**, which illustrates how trustworthy the research seems to be. But there is some problem with p-value and the **statistically significant**.  
+P-value is one of the most basic concepts that every statistical student in their curriculum. P-value appears in some scientific papers in many fields like Physics, Statistics, Economics, Finance, Psychology, etc. Another word we will encounter when reading about p-value is **statistically significant**, which illustrates how trustworthy the research seems to be. But there is some problem with p-value and the "**statistically significant**".  
 
 One use of p-value is in hypothesis testing. In statistical hypothesis testing, we collect data to prove or test a phenomenon. Then, we assume a null hypothesis, compute some statistical indices and compute the p-value. A threshold 0.05 is usually used by many scientists and statisticians to test that if our hypothesis is significant or not. 
 
@@ -21,19 +21,19 @@ That threshold was proposed by *Ronald Fisher*, who emphasizes that
 
 He also emphasizes that while fixed levels such as 5\%, 2\% and 1\% are convenient, the exact p-value can be used and the strength of evidence can and will be revised with further experimentation.
 
-So the use of a fixed level is a convenient choice and p-value can be easily misunderstood. Recently, many statisticians propose an idea to replace p-value with alternative measures. To understand more about p-value and why we need to replace it, I first explain what p-value is and the misunderstanding about p-value. Next, I will discuss why scientific papers are usually wrong with the presence of p-value.
+So the use of a fixed level is a convenient choice and p-value can be easily misunderstood. Recently, many statisticians propose an idea to replace p-value with alternative measures. To understand more about p-value and why some scientists vote to replace it, I first explain what p-value is and the misunderstanding about p-value. Next, I will discuss why some scientific papers are wrong with the presence of p-value and p-hacking.
 
 ## 2. What is p-value
-For example about p-value in hypothesis testing. Assume that we want to figure out if eating one bar of chocolate a day leads to weight loss We collect a sample of 100 people to test that hypothesis. We assign 50 participants to eat one bar of chocolate a day. The other group has to abstain from the chocolate. Both groups are weighted before the experiment and then after the experiment period, their weight change is compared. The confidence level is 5\%. So our null and alternative hypothesis is
+For example about p-value in hypothesis testing. Assume that we want to figure out if eating one bar of chocolate a day leads to weight loss. We collect a sample of 100 people to test that hypothesis. We assign 50 participants to eat one bar of chocolate a day. The other group has to abstain from the chocolate. Both groups are weighted before the experiment and then after the experimential period, their weight change is compared. The confidence level is 5\%. So our null and alternative hypothesis is
 
 $$
 \begin{aligned}
- H_0 & \text{: Eating chocolate does not affect your weight} \\
+H_0 & \text{: Eating chocolate does not affect your weight} \\
 H_1 &  \text{: Eating chocolate does affect your weight}
 \end{aligned}
 $$
 
-Assume that after the experiment period, we obtain a p-value < 0.05, so we reject the $H_0$ that eating chocolate does not affect your weight, statistically significant. The p-value for the result of the experiment is the probability that the experiment result will be $H_0$ assuming that $H_0$ is true. So, if you repeat the experiment 100 times, there are approximately 5 times you will get the result "Eating chocolate does not affect your weight". In statistics, the conclusion about this result is usually "There is enough evidence to reject/not reject $H_0$" not that "$H_0$ is false/true".
+Assume that after the experimential period, we obtain a p-value < 0.05, so we reject the $H_0$ that eating chocolate does not affect your weight, statistically significant. The p-value of the result of the experiment is the probability that the experiment result will be $H_0$ assuming that $H_0$ is true. So, if you repeat the experiment 100 times, there are approximately 5 times you will get the result "Eating chocolate does not affect your weight". In statistics, the conclusion about this result is usually "There is enough evidence to reject/not reject $H_0$", not that "$H_0$ is false/true".
 
 Rejecting the null hypothesis is kind of like the "innocent until proven guilty" principle in court cases, Regina Nuzza, a mathematics professor at Gallaudet University, explained. The defendant first is considered innocent. After debating, if we cannot prove that the defendant is guilty, he/she will be innocent. However, this also means that if a criminal cannot be proved guilty, he/she will be innocent because of a lack of evidence. Hypothesis testing is similar. We reject the null hypothesis $H_0$ because we do not have enough evidence, it does not mean the null hypothesis is false.
 
@@ -48,7 +48,7 @@ When experimenting, scientists usually use a control group and an experimental g
   <img src="hypothesis.png">
 </p>
 
-In the scientific community, published papers are essential for increasing reputation in the community. So, an experiment is expected is to have result number 4. The null hypothesis is false. We incorrectly fail to reject it". However, if an experiment does not lead to that result, it will be kind of frustrated. It means that "We do not have enough evidence to reject that hypothesis. Because we cannot reject the null hypothesis, we have to accept the alternative hypothesis". Clearly, this statement cannot be published in a scientific paper because it does not give the readers much information about the reason leading to that result or some measures to tell the effect of the condition to that experimental group. Every scientist is willing to have a meaningful paper to be published. Therefore, one way to walk around that is p-hacking.
+In the scientific community, published papers are essential for increasing reputation in the community. So, an experiment is expected is to have result "4. The null hypothesis is false. We incorrectly fail to reject it". However, if an experiment does not lead to that result, it will be kind of frustrating. It means that "We do not have enough evidence to reject that hypothesis. Because we cannot reject the null hypothesis, we have to accept the alternative hypothesis". Clearly, this statement cannot be published in a scientific paper because it does not give the readers much information about the reason leading to that result or some measures to tell the effect of the condition to that experimental group. Every scientist is willing to have a meaningful paper to be published. Therefore, one way to walk around that is p-hacking.
 
 <p align="center">
   <img src="significant.png">
@@ -56,14 +56,14 @@ In the scientific community, published papers are essential for increasing reput
 
 P-hacking is manipulating data or analyses to get the significant p-value. Or in other words, researchers can choose analyses, samples or data that make the p-value the most significant. Let's illustrate this by an example in a story posted on https://xkcd.com/882/. To summarize the story, there is a hypothesis that "Jelly beans cause acne" so scientists start investigating. Then, they first test on general jelly beans and find that there is no evidence between jelly beans and acne. Then they keep investigating on different colors of jelly beans until figuring out that the experiment with the green one is significant. So, they conclude that green jelly beans are one of the reasons for causing acne. As you can see, the experiment is repeated over and over until they can find a sample with a significant p-value.
 
-You may think "What is the matter with that? Maybe the green one causes acne!". Let's use a little probability. Assume you, scientist, repeat a jelly beans experiment 20 times and jelly beans actually do not cause acne. Null hypothesis $H_0$ is "Jelly beans do not cause acne". Assume each experiment has 95\% probability not to be significant (not reject $H_0$), only 5\% probability that the experiment is significant, that jelly beans cause acne. The probability that "At least 1 in 20 experiments is significant" is
+You may think "What is the matter with that? Maybe the green one causes acne!". Let's use a little probability. Assume you, scientist, repeat a jelly beans experiment 20 times and jelly beans actually do not cause acne. Null hypothesis $H_0$ is "Jelly beans do not cause acne". Assume each experiment has 95\% probability not to be significant (not reject $H_0$), only 5\% probability that the experiment is significant, which is "jelly beans cause acne". The probability that "At least 1 in 20 experiments is significant" is
 $$1 - 0.95^20 \approx 0.64$$
-If you conduct a similar experiment over and over again, there will be 64\% that the result will be jelly beans cause acne, just by chance or luck. And then, the significant result is published without reminding about all the other experiments. One simple solution to this problem is to use "Bonferroni correction", which choose a new significant level $\alpha$ when performing 20 tests by
+If you conduct a similar experiment over and over again, there will be 64\% that one result will be jelly beans cause acne, just by chance or luck. And then, the significant result is published without reminding about all the other experiments. One simple solution to this problem is to use "Bonferroni correction", which choose a new significant level $\alpha$ when performing 20 tests by
 
 $$\alpha_\text{correction} = \dfrac{\alpha}{20} = 0.0025$$
 
 ## 4. Conclusion
-P-value is a powerful tool in Statistics and many theories use p-value. But if we misunderstand the p-value, the inference can be misleading. Because many people misunderstand the real meaning of p-value, the American Associate Statistician made a statement on p-value, about its limitation and introduce some other methods and approaches for statistical inference. The replacement of p-value may be unnecessary but users should be aware of the true meaning of it. 
+P-value is a powerful tool in Statistics and many theories use p-value. But if we misunderstand the p-value, the inference can be misleading. Because many people misunderstand the real meaning of p-value, the American Associate Statistician made a statement on p-value about its limitation and introduce some other methods and approaches for statistical inference. The replacement of p-value may be unnecessary but users should be aware of the true meaning of it. 
 
 ## References
 - [800 scientists say it’s time to abandon “statistical significance”](https://www.vox.com/latest-news/2019/3/22/18275913/statistical-significance-p-values-explained?fbclid=IwAR039aniJd0k_ygCtOWJKUEk1KvSmx7Az9QoghQqhj5Zo0IAtbe4H_GY8Qw])

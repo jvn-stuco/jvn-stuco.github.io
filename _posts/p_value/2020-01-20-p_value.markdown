@@ -6,6 +6,8 @@ categories: Statistics
 ---
 
 # Do you correctly understand p-value?
+Author: Man Bui - QCF 2018
+
 ## 1. Introduction
 Before starting the article, make sure you have some basic knowledge about hypothesis testing, p-value, and other basic statistical stuff. We will discuss **The misunderstanding of p-value and misinterpret in scientific papers**.
 

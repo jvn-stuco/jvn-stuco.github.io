@@ -4,9 +4,8 @@ title:  "Do you correctly understand p-value?"
 date:   2020-01-20
 categories: Statistics
 ---
-
-# Do you correctly understand p-value?
 Author: Man Bui - QCF 2018
+In this article, I introduce some basic misunderstanding concept about p-value, hypothesis testing and statistical significance. I hope that understanding these concepts will be benefit for you to apply statistical knowledge in both your study and your work.
 
 ## 1. Introduction
 Before starting the article, make sure you have some basic knowledge about hypothesis testing, p-value, and other basic statistical stuff. We will discuss "**The misunderstanding of p-value and misinterpret in scientific papers**" in this article.
